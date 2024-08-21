@@ -64,32 +64,7 @@
       </section>
       <section id="about" class="about_container">
        
-        <img class="img_about"
-          src="assets/img/user_01.svg"
-          alt="Foto do Perfil do Github"
-          width="350px"
-        />
-
-        <article id="sobre_texto">
-          <h1 class="center">Sobre mim</h1>
-
-          <p class="center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-            odit voluptates incidunt inventore rem error harum blanditiis
-            accusamus vitae, minus fugit consequatur? Dolorum maiores magni
-            deleniti modi sit laudantium totam!
-          </p>
-
-          <div id="sobre_github" class="github_container">
-            <div>
-            <a class="botao" target="_blank" href="https://github.com/larissaangioni"
-              >Github</a
-            ></div>
-            <div><p>200 Seguidores</p></div>
-            <div></div><p>100 Repositórios</p></div>
-          
-        </div>
-        </article>
+        
       </section>
 
       <section id="contact" class="contato_container">
@@ -113,7 +88,9 @@
           </div>
         </article>
 
-        <form action="" method="POST">
+        <form id="formulario" action="https://formsubmit.co/286adb74c21bc37780536428268a9bfe" method="POST">
+          <input type="hidden" name="_next" value="http://localhost:5500/sucess.html">
+          <input type="hidden" name="_captcha" value="false">
           <label for="name">Nome: </label>
           <input
             type="text"
@@ -125,7 +102,7 @@
 
           <label for="email">Email: </label>
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
             placeholder="Digite seu email"
@@ -136,7 +113,7 @@
           <input
             type="text"
             id="subject"
-            name="subject"
+            name="_subject"
             placeholder="Digite o titulo da mensagem"
           />
           <span id="txtSubject"></span>
@@ -148,7 +125,8 @@
             placeholder="Digite sua mensagem"
           ></textarea>
 
-          <button class="botao" type="submit">Enviar</button>
+          <button id="botao_enviar" class="botao" type="submit">Enviar</button>
+          
           <!-- <a href="sucess.html">Enviar</a> -->
         </form>
       </section>
@@ -157,5 +135,6 @@
     <footer class="footer_container center">
       <p>Feito com 💖 por Larissa Angioni - 2024</p>
     </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

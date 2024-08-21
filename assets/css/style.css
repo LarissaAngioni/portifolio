@@ -174,10 +174,13 @@ form button {
 }
 
 .footer_container{
-  display: grid;
-  grid-template-columns: auto;
-  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   background-color: var(--purple-800);
+  filter: opacity(0.9);
+
 }
 
 .footer_container p{
@@ -187,5 +190,26 @@ form button {
 }
 
 .footer_container p:hover{
-  color: var(--black-800);
+  color: var(--gray-200);
+}
+
+#sucess {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  max-width: 1120px;
+  margin: auto;
+  justify-content: center;
+}
+
+#sucess h1{
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.section_sucess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
 }
